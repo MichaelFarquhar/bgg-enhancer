@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.css" rel="stylesheet" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"
+    ></script>
+    <style>
+      body {
+        width: 300px;
+        padding: 10px;
+      }
+      .subheader {
+        font-size: 1.15rem;
+        font-weight: 600;
+        padding-bottom: 0.25rem;
+        border-bottom: 1px solid grey;
+        border-radius: 0;
+        margin-bottom: 0.75rem;
+      }
+      .switch-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        gap: 1em;
+      }
+      .switch-label {
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="subheader">Hide Home Page Sections</div>
+    <div class="switch-container">
+      <label class="switch icon">
+        <input type="checkbox" id="featVideosToggle" checked />
+        <span>
+          <i>visibility</i>
+          <i>visibility_off</i>
+        </span>
+      </label>
+      <div class="switch-label">Featured Videos</div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
